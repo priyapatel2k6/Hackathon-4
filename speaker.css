@@ -51,14 +51,14 @@ main {
 }
 
 .performer h2 {
-    color: #333;
+    color:  #410a5e;
     font-size: 1.5em;
     margin-bottom: 10px;
 }
 
 .bio {
-    font-size: 0.9em;
-    color: #666;
+    font-size: 0,15em;
+    color: #140404;
 }
 
 footer {

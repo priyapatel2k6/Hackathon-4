@@ -94,7 +94,7 @@ header {
 }
 
 .navbar .nav-links a:hover {
-    color: #3498db;
+    color: #ba45be;
 }
 
 .hamburger {
@@ -138,7 +138,7 @@ header {
 }
 
 .heading span:hover {
-    color: #3498db; 
+    color: #9038b3; 
     transform: scale(1.1);
 }
 
@@ -158,11 +158,12 @@ header {
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     overflow: hidden;
-    width: 300px;
+    width: 400px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     position: relative;
     text-align: center;
     padding: 20px;
+    gap: 20px;
 }
 
 .member-card:hover {
@@ -198,7 +199,7 @@ header {
 
 .description {
     font-size: 1em;
-    color: #666;
+    color:rgb(46, 46, 46);
     margin: 10px 0;
 }
 
@@ -208,7 +209,7 @@ header {
 
 .songs h3 {
     font-size: 1.2em;
-    color: #333;
+    color:rgb(46, 46, 46);
     margin-bottom: 10px;
 }
 
@@ -219,7 +220,7 @@ header {
 
 .songs li {
     font-size: 1em;
-    color: #007bff;
+    color: #7e33b0;
     margin: 5px 0;
 }
 
@@ -248,7 +249,7 @@ footer {
 }
 
 .social-icon:hover {
-    color: #3498db;
+    color: #9434bd;
 }
 
 .contact-us {
