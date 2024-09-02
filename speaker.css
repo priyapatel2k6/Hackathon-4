@@ -5,13 +5,13 @@ body, h1, h2, p {
 }
 
 body {
-    background-image: url('https://www.shutterstock.com/image-illustration/blue-disco-dance-floor-mirror-260nw-502869457.'); 
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
     color: #333;
     line-height: 1.6;
+    background-image: url(images/bg.png);
 }
 
 header {
@@ -37,9 +37,6 @@ main {
     padding: 20px;
     text-align: center;
     width: 250px;
-}
-body{
-     background-image: url(https://t3.ftcdn.net/jpg/08/55/06/58/360_F_855065860_dY9som1LENze6WBB01Ch50hIStaWHHYN.jpg);
 }
     
 .girl{
