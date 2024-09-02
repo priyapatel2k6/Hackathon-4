@@ -1,0 +1,303 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+.back-button {
+    position: fixed;
+    top: 10px; 
+    right: 20px; 
+    background-color: #cd60f8; 
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: bold;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    cursor: pointer;
+}
+
+.back-button:hover {
+    background: linear-gradient(135deg, #ff4f7a, #8a2be2); 
+    transform: scale(1.05);
+}
+
+body {
+    min-height: 100vh;
+    width: 100%;
+    font-size: 16px;
+    color: #777;
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(images/bg.png);
+}
+
+.background-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1;
+}
+
+.background-video video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(50%);
+}
+
+header {
+    position: relative;
+    z-index: 1;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 10px 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.navbar .logo {
+    color: #f9c74f;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.navbar .nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.navbar .nav-links li {
+    margin: 0 15px;
+}
+
+.navbar .nav-links a {
+    color: #fcb8b8;
+    text-decoration: none;
+    font-size: 1.1em;
+    transition: color 0.3s ease;
+}
+
+.navbar .nav-links a:hover {
+    color: #3498db;
+}
+
+.hamburger {
+    display: none;
+    color: #fff;
+    font-size: 1.5em;
+}
+
+
+.concert-info {
+    color: white;
+    padding: 20px;
+    text-align: center;
+    margin-top: 60px; 
+    position: relative;
+    z-index: 1;
+}
+
+.concert-info h2 {
+    font-size: 3em;
+    font-weight: bold;
+    color: white;
+}
+
+.concert-info p {
+    font-size: 1.2em;
+}
+
+.heading {
+    text-align: center;
+    font-size: 4em; 
+    font-weight: bold;
+    margin: 40px 0;
+    letter-spacing: 2px;
+    color: #f9c74f; 
+}
+
+.heading span {
+    display: inline-block;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.heading span:hover {
+    color: #3498db; 
+    transform: scale(1.1);
+}
+
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    position: relative;
+    z-index: 1;
+}
+
+.member-card {
+    background-color: #f9f9fa;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    width: 300px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    text-align: center;
+    padding: 20px;
+}
+
+.member-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.img-container {
+    position: relative;
+    width: 100%;
+    padding-top: 75%; 
+    overflow: hidden;
+}
+
+.img-container img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.info-container {
+    padding: 20px;
+}
+
+.name {
+    font-size: 1.5em;
+    color: #333;
+    margin: 10px 0;
+}
+
+.description {
+    font-size: 1em;
+    color: #666;
+    margin: 10px 0;
+}
+
+.songs {
+    margin: 10px 0;
+}
+
+.songs h3 {
+    font-size: 1.2em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.songs ul {
+    list-style: none;
+    padding: 0;
+}
+
+.songs li {
+    font-size: 1em;
+    color: #007bff;
+    margin: 5px 0;
+}
+
+.songs li:hover {
+    text-decoration: underline;
+}
+
+footer {
+    background: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    padding: 40px;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+
+.social-media {
+    margin-bottom: 20px;
+}
+
+.social-icon {
+    margin: 0 15px;
+    color: #fff;
+    font-size: 2rem;
+    transition: color 0.3s ease;
+}
+
+.social-icon:hover {
+    color: #3498db;
+}
+
+.contact-us {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    display: inline-block;
+}
+
+.contact-us h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.contact-us p {
+    font-size: 1.2rem;
+}
+
+.contact-us a {
+    color: #3498db;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.contact-us a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .navbar .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background-color: rgba(0, 0, 0, 0.9);
+        width: 100%;
+        text-align: center;
+    }
+
+    .navbar .nav-links.active {
+        display: flex;
+    }
+
+    .navbar .nav-links li {
+        margin: 15px 0;
+    }
+
+    .hamburger {
+        display: block
+    }
+}

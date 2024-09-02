@@ -20,15 +20,19 @@ header{
     text-decoration: none;
     gap: 30px;
     font-size: 20px;
-    color: white;
     font-weight: 500;
     list-style-type: none;
 }
-.menu li:hover{
+.menu a{
+    text-decoration: none;
+    color: white;
+}
+.menu a:hover{
     color: #f5177e;
     cursor: pointer;
     border-bottom: 1px solid #f5177e;
 }
+
 .landing-event{
     display: flex;
     align-items: center;
@@ -49,6 +53,7 @@ header{
 .landing-event img{
     width: 1100px;
 }
+
 .description h6{
     font-size: 30px;
     margin-top: 20px;
@@ -66,6 +71,11 @@ button{
     color: white;
     font-weight: bold;
 }
+button:hover{
+    cursor: pointer;
+    background-color: #241a77;
+}
+
 .events{
     margin: 100px 15%;
 }
@@ -77,6 +87,7 @@ button{
 }
 .events h1{
     text-align: center;
+    font-size: 40px;
 }
 .events h1 span{
     color: #f5177e;
@@ -87,6 +98,7 @@ button{
     box-shadow: 0 8px 6px -6px #e5e5e5;
     overflow: hidden;
 }
+
 .event img{
     width: 100%
 }
@@ -104,10 +116,47 @@ button{
     color: #f5177e;
 }
 footer{
-    background-color: #0a0f5f;
+    background-color: #5725bc;
     padding: 20px 10%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     color: white;
+}
+.scale_me:hover{
+    transform: scale(105%);
+    transition: all 0.2s ease-in-out;
+}
+@media only screen and (max-width: 600px) {
+     header{
+        flex-direction: column;
+     }
+     .menu{
+        gap: 10px;
+        margin-top: 20px;
+     }
+     .landing-event{
+        flex-direction: column;
+     }
+     .landing-event img{
+        width: 400px;
+     }
+     .description{
+        text-align: center;
+     }
+     .description h1{
+        font-size: 30px;
+     }
+     .description p{
+        font-size: 20px;
+     }
+     .events{
+        margin: 100px 5%;
+     }
+     footer{
+        flex-direction: column;
+     }
+     .main{
+        height: 102vh;
+     }
 }

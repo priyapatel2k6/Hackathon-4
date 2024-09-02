@@ -1,0 +1,91 @@
+body, h1, h2, p {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-image: url('https://www.shutterstock.com/image-illustration/blue-disco-dance-floor-mirror-260nw-502869457.'); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background-color: rgba(0, 0, 0, 0.7); 
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+.performer {
+    background-color: rgba(255, 255, 255, 0.8); 
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    margin: 15px;
+    padding: 20px;
+    text-align: center;
+    width: 250px;
+}
+body{
+     background-image: url(https://t3.ftcdn.net/jpg/08/55/06/58/360_F_855065860_dY9som1LENze6WBB01Ch50hIStaWHHYN.jpg);
+}
+    
+.girl{
+    width: 30%;
+}
+.performer img {
+    border-radius: 50%;
+    height: 235px;
+    margin-bottom: 15px;
+    width: 250px;
+}
+
+.performer h2 {
+    color: #333;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.bio {
+    font-size: 0.9em;
+    color: #666;
+}
+
+footer {
+    background-color: rgba(239, 27, 197, 0.7);
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.performer{
+    border: 3px solid hsl(310, 89%, 61%);
+}
+.back-button {
+    position: fixed;
+    top: 10px; 
+    right: 20px; 
+    background-color: #cd60f8; 
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: bold;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+    z-index: 1000;
+}

@@ -1,0 +1,168 @@
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    background-image: url('images/bg.png');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    position: relative;
+}
+.back-button {
+    position: fixed;
+    top: 10px; 
+    right: 20px; 
+    background-color: #cd60f8; 
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: bold;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+.back-button:hover {
+    background: linear-gradient(135deg, #ff4f7a, #8a2be2); 
+    transform: scale(1.05);
+}
+header {
+    background: rgba(44, 62, 80, 0.8);
+    color: #ecf0f1;
+    padding: 1rem;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    color: #fff;
+}
+
+main {
+    padding: 2rem;
+    position: relative;
+    z-index: 1;
+}
+
+section {
+    background: rgba(255, 255, 255, 0.9);
+    margin: 1rem 0;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+h2 {
+    color: #2c3e50;
+    font-size: 2rem;
+}
+
+a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.map-link {
+    display: inline-block;
+    margin-top: 0.5rem;
+    font-size: 1rem;
+}
+
+.transport-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.transport-card {
+    display: flex;
+    align-items: flex-start;
+    background: #fff;
+    border-radius: 8px;
+    padding: 1rem;
+    flex: 1 1 calc(50% - 1rem);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s;
+    position: relative;
+    text-align: left;
+    gap: 1rem;
+}
+
+.transport-card img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.transport-content {
+    flex: 1;
+}
+
+.transport-content h3 {
+    margin: 0;
+    font-size: 1.5rem;
+    color: #2c3e50;
+}
+
+.transport-content p {
+    margin: 0.5rem 0;
+    color: #555;
+}
+
+.transport-card .button {
+    display: inline-block;
+    background: #e74c3c;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background 0.3s;
+    margin-top: 1rem;
+}
+
+.transport-card .button:hover {
+    background: #c0392b;
+}
+
+.transport-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    background-color: #f9f9f9;
+}
+
+.transport-card:hover img {
+    transform: scale(1.1);
+    transition: transform 0.3s;
+}
+
+.transport-card:hover .button {
+    background: #c0392b;
+}
+
+footer {
+    background: rgba(44, 62, 80, 0.8);
+    color: #ecf0f1;
+    text-align: center;
+    padding: 1rem;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    margin: 0;
+}
