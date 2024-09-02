@@ -15,17 +15,19 @@ body {
 }
 
 header {
-    background-color: rgba(0, 0, 0, 0.7); 
     color: #fff;
     padding: 20px 0;
     text-align: center;
+    font-size: 29px;
 }
 
 main {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    padding: 20px;
+    padding: 20px 10%;
+    gap: 50px;
+
 }
 
 .performer {
@@ -33,7 +35,6 @@ main {
     border: 1px solid #ddd;
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    margin: 15px;
     padding: 20px;
     text-align: center;
     width: 250px;
@@ -85,4 +86,8 @@ footer {
     transition: background-color 0.3s ease;
     cursor: pointer;
     z-index: 1000;
+}
+.scale_me:hover{
+    transform: scale(110%);
+    transition: all 0.2s ease-in-out;
 }
